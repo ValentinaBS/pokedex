@@ -1,0 +1,93 @@
+/*
+Primary Colors
+- Dark Blue (main - header, footer and search bar): #1F3D69
+- Light Pink (secondary - logo and hover): #E7788D
+
+Neutral
+- Very dark blue (dark - dark text): #041422
+- White (light - light text): #F5F5F5
+
+font-family: 'Rowdies', cursive; weight: 400
+font-family: 'Ubuntu', sans-serif; weight: 400, 500, 700
+*/
+
+:root {
+    --main: #1F3D69;
+    --secondary: #E7788D;
+    --light: #F5F5F5;
+    --dark: #041422;
+    --normal-light: #B9B995;
+    --normal-dark: #A8A77A;
+    --fire-light: #F19A59;
+    --fire-dark: #EE8130;
+    --water-light: #82A6F3;
+    --water-dark: #6390F0;
+    --electric-light: #F9D956;
+    --electric-dark: #F7D02C;
+    --plant-light: #95D270;
+    --plant-dark: #7AC74C;
+    --ice-light: #ABE1DE;
+    --ice-dark: #96D9D6;
+    --fight-light: #CE5853;
+    --fight-dark: #C22E28;
+    --poison-light: #B565B4;
+    --poison-dark: #A33EA1;
+    --ground-light: #E8CC84;
+    --ground-dark: #E2BF65;
+    --flying-light: #BAA5F5;
+    --flying-dark: #A98FF3;
+    --psychic-light: #FA779F;
+    --psychic-dark: #F95587;
+    --bug-light: #B8C748;
+    --bug-dark: #A6B91A;
+    --rock-light: #C5B45E;
+    --rock-dark: #B6A136;
+    --ghost-light: #8F79AC;
+    --ghost-dark: #735797;
+    --dragon-light: #8C5DFD;
+    --dragon-dark: #6F35FC;
+    --text: 'Ubuntu', sans-serif;
+    --headings: 'Rowdies', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--text);
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+h1 {
+    font-size: 2.75em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2.25em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+}
