@@ -191,6 +191,40 @@ header {
     height: 270px;
 }
 
+/* Horizontal Scrollbar */
+.horizontal-scrollbar{
+    width: 1300px;
+    overflow: auto;
+    border: 1px #F5F5F5;
+    background-color: #F5F5F5;
+    padding: 8px;
+} 
+.horizontal-scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-button:increment,.horizontal-scrollbar::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.horizontal-scrollbar::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
 /* Footer */
 .footer-content{
     width: 100%;
