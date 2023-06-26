@@ -222,3 +222,7 @@ ul{
     column-gap: 20px;
     align-items: center;
 }
+
+.socials li:hover a, li:hover i{
+    color: var(--secondary)
+}
