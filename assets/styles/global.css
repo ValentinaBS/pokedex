@@ -93,6 +93,7 @@ p {
     }
 }
 
+
 /* Header */
 header {
     width: 100%;
@@ -121,6 +122,40 @@ header {
 .search--title {
     text-align: center;
     margin: 2rem;
+}
+
+/* Search Bar */
+.container{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 40vh;
+
+}
+.search-container {
+    position: relative;
+}
+.search-input {
+    position:-ms-page;
+    padding: 23px;
+    font-size: 18px;
+    background-color: var(--main);
+    border-radius: 15px;
+    width: 759px;
+    font: inherit;
+}
+.search-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: var(--main);
+    padding: 23px;
+    cursor: pointer;
+} 
+.search-icon{
+    position: absolute;
+    width: 23px;
+    height: 23px;
 }
 
 /* Footer */
