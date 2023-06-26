@@ -92,4 +92,44 @@ p {
     }
 }
 
+.contenedor{
+}
+
+.tarjetas{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 270px;
+    height: 520px;
+    border-radius: 25px;
+    background-color: #95D270;
+}
+
+.tarjetas p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 27px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tipo{
+    background-color:#7AC74C;
+}
+
+.tipo1{
+    color: #F5F5F5;
+    background-color: #A33EA1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tarjetas img{
+    width: 270px;
+    height: 270px;
+}
+
+
+
 /* Footer */
