@@ -194,12 +194,8 @@ header {
 
 /* Footer */
 .footer-content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    margin-top: .1rem;
+    margin-top: 1.5rem;
     background-color: var(--main);
     display: flex;
     align-items: center;
@@ -227,4 +223,8 @@ ul{
     list-style: none;
     column-gap: 20px;
     align-items: center;
+}
+
+.socials li:hover a, li:hover i{
+    color: var(--secondary)
 }
