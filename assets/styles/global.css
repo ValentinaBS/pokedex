@@ -122,3 +122,40 @@ header {
     text-align: center;
     margin: 2rem;
 }
+
+/* Footer */
+.footer-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: .1rem;
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-content h2{
+    font-family: var(--headings);
+    color: var(--light);
+}
+
+.bxl-github {
+    color: var(--light);
+    font-size: 25px;
+    margin-right:2px;
+}
+
+.socials a{
+    color: var(--light);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    align-items: center;
+}
