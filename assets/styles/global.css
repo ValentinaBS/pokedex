@@ -127,8 +127,6 @@ header {
     display: flex;
     justify-content: center ;
     align-items: center;
-    height: 40vh;
-
 }
 .search-container {
     position: relative;
@@ -164,6 +162,7 @@ header {
     height: 520px;
     border-radius: 25px;
     background-color: #95D270;
+    margin: 1.5rem;
 }
 
 .tarjetas p{
@@ -195,7 +194,6 @@ header {
 /* Footer */
 .footer-content{
     width: 100%;
-    margin-top: 1.5rem;
     background-color: var(--main);
     display: flex;
     align-items: center;
