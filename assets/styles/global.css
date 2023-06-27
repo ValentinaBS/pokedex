@@ -216,6 +216,39 @@ header {
     padding: 22px;
 }
 
+/* Horizontal Scrollbar */
+.horizontal-scrollbar{
+    width: 1300px;
+    overflow: auto;
+    border: 1px var(--light);
+    background-color: var(--light);
+    padding: 8px;
+} 
+.horizontal-scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-button:increment,.horizontal-scrollbar::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.horizontal-scrollbar::-webkit-scrollbar:horizontal {
+    height: 14px;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 20px;
+    border: 2px solid var(--light);
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 
 /* Footer */
 .footer-content{
