@@ -155,41 +155,67 @@ header {
 }
 
 /* Card */
-.tarjetas{
-    padding-top: 15px;
-    padding-bottom: 30px;
+.card{
+    cursor: pointer;
     width: 270px;
-    height: 520px;
+    height: 490px;
     border-radius: 25px;
     background-color: #95D270;
     margin: 1.5rem;
+    padding-top: 23px;
 }
 
-.tarjetas p{
-    font-family: 'Ubuntu', sans-serif;
+.pokemon-number p{
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 27px;
-    font-size: 1em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 2em;
+    padding-top: 9px;
 }
 
-.tipo{
+.pokemon-name p{
+    text-align: center;
+    font-weight: 750;
+    font-size: 1.50em;
+    padding-top: 12px;
+}
+
+.pokemon{
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    z-index: 2;
+}
+.tipe{
     background-color:#7AC74C;
 }
 
-.tipo1{
+.tipe p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    font-weight: 670;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.tipe1{
     color: #F5F5F5;
     background-color: #A33EA1;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-.tarjetas img{
-    width: 270px;
-    height: 270px;
+.tipe1 p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    font-weight: 670;
+    padding: 22px;
 }
+
 
 /* Footer */
 .footer-content{
