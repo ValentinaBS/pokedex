@@ -156,7 +156,6 @@ header {
 
 /* Card */
 .card{
-    cursor: pointer;
     width: 270px;
     height: 490px;
     border-radius: 25px;
