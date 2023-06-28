@@ -15,7 +15,7 @@ function showPokemon(poke) {
     let pokeId = poke.id.toString();
     if (pokeId.length === 1) {
         pokeId = '00' + pokeId;
-    } else if(pokeId.length === 1) {
+    } else if(pokeId.length === 2) {
         pokeId = '0' + pokeId;
     }
 
@@ -95,18 +95,16 @@ function showPokemon(poke) {
     div.classList.add(cardBackground)
     div.innerHTML = `
         <div class="pokemon-number">
-            <p>#${poke.id}</p>
+            <p>#${pokeId}</p>
         </div>
 
         <div class="pokemon-name">
             <i class='type-icon bx bxs-${iconType}'></i>
             <p>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</p>
         </div>
-            
-        <div>
-            <img src="${poke.sprites.other["official-artwork"].front_default}" alt="${poke.name}" class="pokemon">
-        </div>
 
+        <img src="${poke.sprites.other["official-artwork"].front_default}" alt="${poke.name}" class="pokemon">
+        
         ${elementalTypes}
     `;
     pokemonList.append(div)
