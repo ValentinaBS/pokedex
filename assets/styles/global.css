@@ -24,12 +24,12 @@ font-family: 'Ubuntu', sans-serif; weight: 400, 500, 700
     --water-dark: #6390F0;
     --electric-light: #F9D956;
     --electric-dark: #F7D02C;
-    --plant-light: #95D270;
-    --plant-dark: #7AC74C;
+    --grass-light: #95D270;
+    --grass-dark: #7AC74C;
     --ice-light: #ABE1DE;
     --ice-dark: #96D9D6;
-    --fight-light: #CE5853;
-    --fight-dark: #C22E28;
+    --fighting-light: #CE5853;
+    --fighting-dark: #C22E28;
     --poison-light: #B565B4;
     --poison-dark: #A33EA1;
     --ground-light: #E8CC84;
@@ -46,6 +46,10 @@ font-family: 'Ubuntu', sans-serif; weight: 400, 500, 700
     --ghost-dark: #735797;
     --dragon-light: #8C5DFD;
     --dragon-dark: #6F35FC;
+    --steel-light: #DBDBE7;
+    --steel-dark: #B7B7CE;
+    --fairy-light: #F5C3DC;
+    --fairy-dark: #EB87B8;
     --text: 'Ubuntu', sans-serif;
     --headings: 'Rowdies', cursive;
 }
@@ -69,6 +73,7 @@ input, button, textarea, select {
 
 h1 {
     font-size: 2.75em;
+    font-family: var(--headings);
 }
 
 h2 {
@@ -93,11 +98,119 @@ p {
     }
 }
 
+.normal {
+    background-color: var(--normal-dark);
+}
+.fire {
+    background-color: var(--fire-dark);
+}
+.water {
+    background-color: var(--water-dark);
+}
+.electric {
+    background-color: var(--electric-dark);
+}
+.grass {
+    background-color: var(--grass-dark);
+}
+.ice {
+    background-color: var(--ice-dark);
+}
+.fighting {
+    background-color: var(--fighting-dark);
+    color: var(--light);
+}
+.poison {
+    background-color: var(--poison-dark);
+    color: var(--light);
+}
+.ground {
+    background-color: var(--ground-dark);
+}
+.flying {
+    background-color: var(--flying-dark);
+}
+.psychic {
+    background-color: var(--psychic-dark);
+}
+.bug {
+    background-color: var(--bug-dark);
+}
+.rock {
+    background-color: var(--rock-dark);
+}
+.ghost {
+    background-color: var(--ghost-dark);
+    color: var(--light);
+}
+.dragon {
+    background-color: var(--dragon-dark);
+    color: var(--light);
+}
+.fairy {
+    background-color: var(--fairy-dark);
+}
+.steel {
+    background-color: var(--steel-dark);
+}
+.normal-light {
+    background-color: var(--normal-light);
+}
+.fire-light {
+    background-color: var(--fire-light);
+}
+.water-light {
+    background-color: var(--water-light);
+}
+.electric-light {
+    background-color: var(--electric-light);
+}
+.grass-light {
+    background-color: var(--grass-light);
+}
+.ice-light {
+    background-color: var(--ice-light);
+}
+.fighting-light {
+    background-color: var(--fighting-light);
+}
+.poison-light {
+    background-color: var(--poison-light);
+}
+.ground-light {
+    background-color: var(--ground-light);
+}
+.flying-light {
+    background-color: var(--flying-light);
+}
+.psychic-light {
+    background-color: var(--psychic-light);
+}
+.bug-light {
+    background-color: var(--bug-light);
+}
+.rock-light {
+    background-color: var(--rock-light);
+}
+.ghost-light {
+    background-color: var(--ghost-light);
+}
+.dragon-light {
+    background-color: var(--dragon-light);
+}
+.fairy-light {
+    background-color: var(--fairy-light);
+}
+.steel-light {
+    background-color: var(--steel-light);
+}
+
 /* Header */
 header {
     width: 100%;
     background-color: var(--main);
     color: var(--light);
+    font-family: var(--headings);
     display: flex;
     align-items: center;
     column-gap: 0.94rem;
@@ -105,7 +218,7 @@ header {
     text-align: center;
 }
 
-.header--img {
+.header-img {
     height: 2.8rem;
     margin-left: 0.5rem;
 }
@@ -117,7 +230,7 @@ header {
 }
 
 /* Search section */
-.search--title {
+.search-title {
     text-align: center;
     margin: 2rem;
 }
@@ -154,12 +267,23 @@ header {
     height: 23px;
 }
 
+/* Carrousel */
+.cards-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
+}
+
 /* Card */
 .card{
+    background-image: url(../images/bg-pokeball.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
     width: 270px;
-    height: 490px;
+    max-height: 540px;
     border-radius: 25px;
-    background-color: #95D270;
     margin: 1.5rem;
     padding-top: 23px;
 }
@@ -169,84 +293,69 @@ header {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2em;
-    padding-top: 9px;
+    margin-top: 9px;
 }
 
-.pokemon-name p{
+.pokemon-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
     text-align: center;
     font-weight: 750;
-    font-size: 1.50em;
-    padding-top: 12px;
+    font-size: 1.3em;
+    margin-top: 12px;
+}
+
+.type-icon {
+    font-size: 1.4rem;
 }
 
 .pokemon{
-    position: absolute;
     width: 250px;
     height: 230px;
-    margin-bottom: 100px;
-    margin-left: 10px;
-    z-index: 2;
-}
-.tipe{
-    background-color:#7AC74C;
+    margin: 0.8rem 0;
 }
 
-.tipe p{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.35em;
-    font-weight: 670;
-    padding: 20px;
-    margin-top: 25px;
+.type {
+    padding: 1rem;
 }
 
-.tipe1{
-    color: #F5F5F5;
-    background-color: #A33EA1;
+.round {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-.tipe1 p{
+.type p {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.35em;
     font-weight: 670;
-    padding: 22px;
 }
 
 /* Horizontal Scrollbar */
-.horizontal-scrollbar{
-    width: 1300px;
-    overflow: auto;
-    border: 1px var(--light);
-    background-color: var(--light);
-    padding: 8px;
-} 
-.horizontal-scrollbar::-webkit-scrollbar {
+.cards-container::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
-.horizontal-scrollbar::-webkit-scrollbar:vertical {
-    width:10px;
-}
-
-.horizontal-scrollbar::-webkit-scrollbar-button:increment,.horizontal-scrollbar::-webkit-scrollbar-button {
+.cards-container::-webkit-scrollbar-button:increment,.cards-container::-webkit-scrollbar-button {
     display: none;
 } 
 
-.horizontal-scrollbar::-webkit-scrollbar:horizontal {
-    height: 14px;
+.cards-container::-webkit-scrollbar:horizontal {
+    height: 20px;
 }
 
-.horizontal-scrollbar::-webkit-scrollbar-thumb {
+.cards-container::-webkit-scrollbar-thumb {
     background-color: var(--main);
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid var(--light);
 }
 
-.horizontal-scrollbar::-webkit-scrollbar-track {
+.cards-container::-webkit-scrollbar-track {
     border-radius: 10px;  
+    background-color: var(--light);
+    margin: 0 1.5rem;
 }
 
 /* Footer */
@@ -271,7 +380,11 @@ header {
 }
 
 .socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--light);
+    text-decoration: none;
 }
 
 ul{
@@ -279,6 +392,14 @@ ul{
     list-style: none;
     column-gap: 20px;
     align-items: center;
+}
+
+.socials span {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
 }
 
 .socials li:hover a, li:hover i{
