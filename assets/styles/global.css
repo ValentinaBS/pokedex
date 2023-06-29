@@ -311,6 +311,11 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 25px;
     margin: 1.5rem;
     padding-top: 23px;
+    transition: transform 0.7s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
 }
 
 .pokemon-number p{
