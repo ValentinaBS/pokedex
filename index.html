@@ -37,7 +37,7 @@
     <header>
         <img class="header-img" src="assets/images/logo.png" alt="Pokedex logo">
         <h2>
-            Carrousel Pokédex
+            Carrousel <span class="responsive-title">Pokédex</span>
         </h2>
     </header>
     <section class="search-section">
@@ -50,20 +50,18 @@
             </p>
         </div>
         <div class="container">
-            <div class="search-container">
-                <input type="textsearch" class="search-input" placeholder="Bulbasaur or 001...">
-                <div class="search-img">
-                    <i class='bx bx-search-alt'></i>
-                </div>
-            </div>
+            <i class='bx bx-search-alt'></i>
+            <input 
+                type="search" 
+                id="search-bar"
+                class="search-input" 
+                placeholder="Bulbasaur or 001..."
+                name="q"
+                maxlength="15"
+            >
         </div>
     </section>
     <div class="cards-container" id="pokemon-list"></div>
-    <!--
-        <div class="horizontal-scrollbar">
-            ........................................................................................................................................................................................................................................................................................................................................................................
-            </div>
-    -->
     <footer class="footer-content">
             <h2>Credits</h2>
             <ul class="socials">

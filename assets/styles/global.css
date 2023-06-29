@@ -218,14 +218,26 @@ header {
     text-align: center;
 }
 
+.responsive-title {
+    display: none;
+}
+
 .header-img {
-    height: 2.8rem;
+    height: 2rem;
     margin-left: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
     header {
         text-align: left;
+    }
+
+    .responsive-title {
+        display: inline;
+    }
+
+    .header-img {
+        height: 2.8rem;
     }
 }
 
@@ -236,35 +248,48 @@ header {
 }
 
 /* Search Bar */
+
 .container{
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-}
-.search-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
 }
+
 .search-input {
-    position:-ms-page;
-    padding: 23px;
-    font-size: 18px;
+    width: 100%;
+    padding: 0.8rem 0.5rem 0.8rem 2.8rem;
+    border: none;
+    border-radius: 0.9rem;
     background-color: var(--main);
-    border-radius: 15px;
-    width: 759px;
-    font: inherit;
+    color: var(--light);
 }
-.search-img{
+
+.search-input:focus {
+    outline: 2px solid var(--secondary);
+}
+
+.search-input::placeholder {
+    color: var(--light);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    filter: brightness(0) invert(1);
+    margin-right: 0.5rem;
+}
+
+.bx-search-alt{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    border: var(--main);
-    padding: 23px;
-    cursor: pointer;
-} 
-.search-icon{
-    position: absolute;
-    width: 23px;
-    height: 23px;
+    top: 0.8rem;
+    left: 0.8rem;
+    color: var(--light);
+    font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        margin: 0 25%;
+    }
 }
 
 /* Carrousel */
@@ -272,7 +297,7 @@ header {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 /* Card */
@@ -282,7 +307,7 @@ header {
     background-position: left;
     cursor: pointer;
     width: 270px;
-    max-height: 540px;
+    max-height: 530px;
     border-radius: 25px;
     margin: 1.5rem;
     padding-top: 23px;
@@ -333,6 +358,10 @@ header {
     font-weight: 670;
 }
 
+.hide {
+    display: none;
+}
+
 /* Horizontal Scrollbar */
 .cards-container::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -363,8 +392,8 @@ header {
     width: 100%;
     background-color: var(--main);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 1rem;
     padding: 20px;
 }
 
@@ -382,16 +411,18 @@ header {
 .socials a{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--light);
     text-decoration: none;
 }
 
 ul{
     display: flex;
+    flex-direction: column;
     list-style: none;
-    column-gap: 20px;
-    align-items: center;
+    column-gap: 1.3rem;
+    align-items: left;
+    row-gap: 1.3rem;
 }
 
 .socials span {
@@ -403,5 +434,20 @@ ul{
 }
 
 .socials li:hover a, li:hover i{
-    color: var(--secondary)
+    color: var(--secondary);
+    transition: all .5s;
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .socials a {
+        justify-content: center;
+    }
+    ul {
+        flex-direction: row;
+    }
 }
