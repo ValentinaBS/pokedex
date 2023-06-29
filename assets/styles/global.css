@@ -218,14 +218,26 @@ header {
     text-align: center;
 }
 
+.responsive-title {
+    display: none;
+}
+
 .header-img {
-    height: 2.8rem;
+    height: 2rem;
     margin-left: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
     header {
         text-align: left;
+    }
+
+    .responsive-title {
+        display: inline;
+    }
+
+    .header-img {
+        height: 2.8rem;
     }
 }
 
@@ -295,7 +307,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-position: left;
     cursor: pointer;
     width: 270px;
-    max-height: 540px;
+    max-height: 530px;
     border-radius: 25px;
     margin: 1.5rem;
     padding-top: 23px;
@@ -344,6 +356,10 @@ input[type="search"]::-webkit-search-cancel-button {
     text-transform: uppercase;
     font-size: 1.35em;
     font-weight: 670;
+}
+
+.hide {
+    display: none;
 }
 
 /* Horizontal Scrollbar */
