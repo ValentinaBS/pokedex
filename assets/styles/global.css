@@ -313,6 +313,18 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 23px;
 }
 
+.card:hover{
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove{
+    from {bottom: 23px;}
+    to {top: 1px;}
+}
+
 .pokemon-number p{
     text-align: center;
     text-transform: uppercase;
