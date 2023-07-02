@@ -317,12 +317,13 @@ input[type="search"]::-webkit-search-cancel-button {
     position: relative;
     animation-name: mymove;
     animation-duration: 5s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
 }
 
 @keyframes mymove{
-    from {bottom: 23px;}
-    to {top: 1px;}
+    0% {bottom: 1px;}
+    25% {bottom: 20px};
+    100% {bottom: 24px;}
 }
 
 .pokemon-number p{
